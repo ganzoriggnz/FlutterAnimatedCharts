@@ -251,19 +251,19 @@ class _HomePageState extends State<HomePage> {
                             defaultRenderer: new charts.LineRendererConfig(
                                 includeArea: true, stacked: true),
                             animate: true,
-                            animationDuration: Duration(seconds: 5),
+                            animationDuration: Duration(seconds: 1),
                             behaviors: [
-        new charts.ChartTitle('Years',
-            behaviorPosition: charts.BehaviorPosition.bottom,
-            titleOutsideJustification:charts.OutsideJustification.middleDrawArea),
-        new charts.ChartTitle('Sales',
-            behaviorPosition: charts.BehaviorPosition.start,
-            titleOutsideJustification: charts.OutsideJustification.middleDrawArea),
-        new charts.ChartTitle('Departments',
-            behaviorPosition: charts.BehaviorPosition.end,
-            titleOutsideJustification:charts.OutsideJustification.middleDrawArea,
-            )   
-      ]
+                                  new charts.ChartTitle('Years',
+                                      behaviorPosition: charts.BehaviorPosition.bottom,
+                                      titleOutsideJustification:charts.OutsideJustification.middleDrawArea),
+                                  new charts.ChartTitle('Sales',
+                                      behaviorPosition: charts.BehaviorPosition.start,
+                                      titleOutsideJustification: charts.OutsideJustification.middleDrawArea),
+                                  new charts.ChartTitle('Departments',
+                                      behaviorPosition: charts.BehaviorPosition.end,
+                                      titleOutsideJustification:charts.OutsideJustification.middleDrawArea,
+                                      )   
+                                ]
                           ),
                         ),
                       ],
